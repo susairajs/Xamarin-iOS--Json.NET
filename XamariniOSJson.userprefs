@@ -1,15 +1,17 @@
 ﻿<Properties StartupConfiguration="{7C27176E-EEFF-48C6-9AE4-853D2B38F62C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamariniOSJson/JsonHelper.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamariniOSJson/ViewController.cs">
     <Files>
-      <File FileName="XamariniOSJson/JsonHelper.cs" Line="6" Column="3" />
-      <File FileName="XamariniOSJson/ViewController.cs" Line="18" Column="4" />
+      <File FileName="XamariniOSJson/JsonHelper.cs" Line="9" Column="1" />
+      <File FileName="XamariniOSJson/ViewController.cs" Line="33" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/DELPIN/Projects/XamariniOSJson/XamariniOSJson/JsonHelper.cs" relfile="XamariniOSJson/JsonHelper.cs" line="9" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.XamariniOSJson PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F21228CC-50FA-4F8C-A3A8-6DCEE6BE0337" />
+  <MonoDevelop.Ide.ItemProperties.XamariniOSJson PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.53785F66-4F6E-4445-B0E6-E3856D84F8B8" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>

@@ -32,19 +32,44 @@
                                     <action selector="BtnWrite_TouchUpInside:" destination="BYZ-38-t0r" id="13" eventType="touchUpInside"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="17" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="50" y="230" width="500" height="30"/>
+                                <state key="normal" title="Read">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnRead_TouchUpInside:" destination="BYZ-38-t0r" id="26" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="21" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="310" width="560" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
                             <constraint id="6" firstItem="5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50"/>
                             <constraint id="7" firstItem="5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
                             <constraint id="8" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" constant="20"/>
-                            <constraint id="10" firstItem="9" firstAttribute="top" secondItem="5" secondAttribute="bottom" constant="50"/>
+                            <constraint id="10" firstItem="9" firstAttribute="top" secondItem="5" secondAttribute="bottom" constant="50">
+                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                            </constraint>
                             <constraint id="11" firstItem="9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
                             <constraint id="12" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="9" secondAttribute="trailing" constant="20"/>
+                            <constraint id="18" firstItem="17" firstAttribute="top" secondItem="9" secondAttribute="bottom" constant="50"/>
+                            <constraint id="19" firstItem="17" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50"/>
+                            <constraint id="20" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" constant="50"/>
+                            <constraint id="22" firstItem="21" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
+                            <constraint id="23" firstItem="21" firstAttribute="top" secondItem="17" secondAttribute="bottom" constant="50"/>
+                            <constraint id="25" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="21" secondAttribute="trailing" constant="20"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="txtInput" destination="5" id="name-outlet-5"/>
                         <outlet property="btnWrite" destination="9" id="name-outlet-9"/>
+                        <outlet property="btnRead" destination="17" id="name-outlet-17"/>
+                        <outlet property="lblDisplay" destination="21" id="name-outlet-21"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

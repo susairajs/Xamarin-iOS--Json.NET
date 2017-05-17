@@ -15,11 +15,23 @@ namespace XamariniOSJson
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btnRead { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton btnWrite { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel lblDisplay { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField txtInput { get; set; }
+
+        [Action ("BtnRead_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void BtnRead_TouchUpInside (UIKit.UIButton sender);
 
         [Action ("BtnWrite_TouchUpInside:")]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -27,9 +39,19 @@ namespace XamariniOSJson
 
         void ReleaseDesignerOutlets ()
         {
+            if (btnRead != null) {
+                btnRead.Dispose ();
+                btnRead = null;
+            }
+
             if (btnWrite != null) {
                 btnWrite.Dispose ();
                 btnWrite = null;
+            }
+
+            if (lblDisplay != null) {
+                lblDisplay.Dispose ();
+                lblDisplay = null;
             }
 
             if (txtInput != null) {

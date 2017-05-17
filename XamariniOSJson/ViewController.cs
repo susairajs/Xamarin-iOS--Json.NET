@@ -21,6 +21,11 @@ namespace XamariniOSJson
 			// Perform any additional setup after loading the view, typically from a nib.
 		}
 
+		partial void BtnRead_TouchUpInside(UIButton sender)
+		{
+			lblDisplay.Text = "Name:" + JsonHelper.JsonReader(filename,name);
+		}
+
 		partial void BtnWrite_TouchUpInside(UIButton sender)
 		{
 			js.Add(name, txtInput.Text);

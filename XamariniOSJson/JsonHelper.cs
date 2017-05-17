@@ -12,16 +12,35 @@ namespace XamariniOSJson
 		{
 			try
 			{
+				
 				var filepath = Path.Combine(Folderpath, filename + fileextension);
-				File.WriteAllText(filepath, JsonData);
-				Console.WriteLine(true.ToString());
-				return true;
+					File.WriteAllText(filepath, JsonData);
+					Console.WriteLine(true.ToString());
+					return true;
+
 			}
 			catch(Exception e)
 			{
 				Console.WriteLine(e.ToString());
 				return false;
 			}
+		}
+		public static string JsonReader(string filename, string fieldname)
+		{
+			try
+			{
+				var filepath = Path.Combine(Folderpath, filename + fileextension);
+				var content = File.ReadAllText(filepath);
+				JObject obj = JObject.Parse(content);
+				return obj[fieldname].ToString();
+
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine(e);
+				return null;
+			}
+				
 		}
 
 	}
